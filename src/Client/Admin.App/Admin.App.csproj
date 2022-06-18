@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCCA49BC-9A8E-4D71-A0CB-8A4487EC13EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Admin.App</RootNamespace>
+    <AssemblyName>Admin.App</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.XtraBars.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SKGL, Version=2.0.4.1, Culture=neutral, PublicKeyToken=6506df92444891d9, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SoftwareProtector.1.0.5.1\lib\SKGL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\MD5Security.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\MD5Security.Designer.cs">
+      <DependentUpon>MD5Security.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\PrivateSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\PrivateSecurity.Designer.cs">
+      <DependentUpon>PrivateSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bl.cs" />
+    <Compile Include="blMenu.cs" />
+    <Compile Include="Programs\MSP\Helps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programs\MSP\Helps.Designer.cs">
+      <DependentUpon>Helps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\MSP\Licence\frnLisansCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programs\MSP\Licence\frnLisansCreate.Designer.cs">
+      <DependentUpon>frnLisansCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screns.cs" />
+    <EmbeddedResource Include="App\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\MD5Security.resx">
+      <DependentUpon>MD5Security.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\PrivateSecurity.resx">
+      <DependentUpon>PrivateSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programs\MSP\Helps.resx">
+      <DependentUpon>Helps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programs\MSP\Licence\frnLisansCreate.resx">
+      <DependentUpon>frnLisansCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Programs\MSP\Customers\" />
+    <Folder Include="Programs\SIS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Admin.Data\Admin.Data.csproj">
+      <Project>{1679FE1B-CE17-40DE-AF9D-27B55297BED0}</Project>
+      <Name>Admin.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Admin.Infrastructure\Admin.Infrastructure.csproj">
+      <Project>{FEFF468A-A704-4175-80D4-799D73AA0C69}</Project>
+      <Name>Admin.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LINCENSE.txt" />
+    <Content Include="Software Protector.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

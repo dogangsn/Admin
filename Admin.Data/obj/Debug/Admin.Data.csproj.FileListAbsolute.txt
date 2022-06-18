@@ -1,0 +1,5 @@
+D:\Dogan\Project\Admin_Project\Admin\Admin.Data\bin\Debug\Admin.Data.dll
+D:\Dogan\Project\Admin_Project\Admin\Admin.Data\bin\Debug\Admin.Data.pdb
+D:\Dogan\Project\Admin_Project\Admin\Admin.Data\obj\Debug\Admin.Data.csprojAssemblyReference.cache
+D:\Dogan\Project\Admin_Project\Admin\Admin.Data\obj\Debug\Admin.Data.dll
+D:\Dogan\Project\Admin_Project\Admin\Admin.Data\obj\Debug\Admin.Data.pdb
