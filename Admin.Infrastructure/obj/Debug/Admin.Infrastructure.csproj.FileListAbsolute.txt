@@ -3,3 +3,9 @@ D:\Dogan\Project\Admin_Project\Admin\Admin.Infrastructure\bin\Debug\Admin.Infras
 D:\Dogan\Project\Admin_Project\Admin\Admin.Infrastructure\obj\Debug\Admin.Infrastructure.csprojAssemblyReference.cache
 D:\Dogan\Project\Admin_Project\Admin\Admin.Infrastructure\obj\Debug\Admin.Infrastructure.dll
 D:\Dogan\Project\Admin_Project\Admin\Admin.Infrastructure\obj\Debug\Admin.Infrastructure.pdb
+D:\Private\Project\SIS.Admin\Admin.Infrastructure\bin\Debug\Admin.Infrastructure.dll
+D:\Private\Project\SIS.Admin\Admin.Infrastructure\bin\Debug\Admin.Infrastructure.pdb
+D:\Private\Project\SIS.Admin\Admin.Infrastructure\obj\Debug\Admin.Infrastructure.csproj.AssemblyReference.cache
+D:\Private\Project\SIS.Admin\Admin.Infrastructure\obj\Debug\Admin.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Private\Project\SIS.Admin\Admin.Infrastructure\obj\Debug\Admin.Infrastructure.dll
+D:\Private\Project\SIS.Admin\Admin.Infrastructure\obj\Debug\Admin.Infrastructure.pdb
